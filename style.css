@@ -1,0 +1,374 @@
+/* ==========================================================
+   FICHIER DE STYLE (couleurs, tailles, espacements)
+   Ce fichier controle uniquement l'APPARENCE du site.
+   Le contenu (textes, liens, images) se modifie dans index.html.
+
+   Quelques reperes utiles si besoin de changer une couleur :
+   - Couleur doree/marron principale : rgb(163, 122, 45)
+   - Couleur orange claire de la barre de menu : rgb(255, 218, 151)
+   - Fond de page (creme) : rgb(255, 253, 248)
+
+   La derniere partie du fichier (tout en bas, section
+   "RESPONSIVE / ADAPTATION MOBILE") adapte automatiquement le site
+   pour les tablettes et telephones. Il n'y a rien a faire manuellement.
+   ========================================================== */
+
+/*remettre les espacements a 0*/
+
+*{
+    box-sizing:border-box;
+    margin:0; 
+    padding:0;
+}
+
+body{
+    font-family:Instrument Sans; 
+    padding-top:2em;
+    padding-right:4em;
+    padding-left:4em;
+    background:rgb(255, 253, 248);
+    
+}
+
+/* navigation */
+a{
+    text-decoration:none;
+    font-size:1.2em;
+    color:black;
+    padding:.5em;
+    transition:.1s;
+}
+a:hover{
+    border:2px solid rgb(255, 207, 172);
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.373);
+    border-radius:1em;
+    background:rgba(255, 166, 0, 0.3);
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:rgb(255, 218, 151);
+    border-radius:2em;
+    border-bottom:4px solid rgb(163, 122, 45);
+    margin-bottom:2em;
+    padding-left:2em;
+    padding-right:2em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.273);
+}
+.nav-droite{
+    display:flex; 
+    gap:3em;
+    align-items:center;
+}
+.petitLogo{
+    width:5em;
+    border-radius:2em;
+}
+.nav-gauche{
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight:600;
+}
+#logoLien{
+    transition:none;
+}
+
+.nav-gauche a{
+    transition:none;
+}
+@keyframes bouge{
+    0%{}
+    25%{
+        transform:translateX(-.2em);
+    }
+    50%{
+        transform:translateX(.4em);
+    }
+    75%{
+        transform:translateX(-.4em);
+    }
+    100%{
+        transform:translateX(0);
+    }
+
+}
+
+/* titre */
+
+#titre{
+    font-size:3em;
+    display:flex;
+    flex-direction:column;
+    gap:.2em;
+}
+
+.sous{
+    color:rgb(56, 56, 56);
+}
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10em;
+}
+#timbreMain{
+    width:35em;
+    border:2px solid rgb(255, 218, 179);
+    border-radius:1em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.353);
+    animation: bouge 10s  reverse  ease-in infinite;
+
+}
+#imageLycee{
+    width:25em;
+    margin-right:6em;
+    border-radius:1em;
+    border:2px solid rgb(133, 133, 133);
+    box-shadow:1px 1px 10px  rgba(0,0,0,.353);
+    animation: bouge 10s ease infinite;
+
+}
+.collage{
+    display:flex;
+    flex-direction:column;
+    gap:3em;
+}
+#styleVille{
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+/* section en bas */
+
+.sectionTitre{
+    font-size:3em;
+    color:rgb(163, 122, 45);
+}
+hr{
+    width:15em;
+    margin-bottom:1em;
+}
+.surNous{
+    display:flex;
+    gap:3em;
+    justify-content:center;
+    align-items:center;
+    
+
+}
+section{
+    border-top:4px solid rgb(163, 122, 45);
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.361);
+    padding-top:3em;
+    margin-top:7em;
+    border-radius:3em;
+    padding:1em;
+    padding-top:3em;
+}
+.infoParagraphe{
+    font-size:1.3em;
+    width:30em;
+}
+.oldPic{
+    border-radius:3em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.398);
+}
+
+/* carte d'information */
+
+
+.imageCarte{
+    min-width:25em;
+    height:15em;
+}
+.carte{
+    display:flex;
+    flex-direction:column; 
+    gap:1em;
+    border-left:4px solid rgb(163, 122, 45);
+    border-top:4px solid rgb(163, 122, 45);
+    border-right:4px solid rgb(214, 148, 27);
+    border-bottom:4px solid rgb(214, 148, 27);
+    width:30em;
+    align-items:center;
+    border-radius:2em;
+    padding:1em;
+    height:25em;
+    background: linear-gradient(75deg, rgba(163, 122, 45, 0.178),rgba(198, 153, 69, 0.285)) ;
+    backdrop-filter:blur(10px);
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.357);
+    transition:.2s;
+}
+.carte:hover{
+    transform:translateY(-.2em);
+    background: linear-gradient(95deg, rgba(163, 122, 45, 0.178),rgb(198, 153, 69)) ;
+    filter:saturate(150%);
+}
+.conteneurEvenements{
+    display:flex;
+    padding:2em;
+
+    gap:2em;
+    overflow-x:scroll;
+}
+.carte img{
+    border:2px solid black;
+    border-radius:2em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.29);
+}
+
+
+#Evenements{
+    background:linear-gradient(180deg, rgba(255,255,255,.5), rgba(255,255,255,.5)), url("assets/silhouette.jpg");
+    background-size:cover;
+}
+
+/* contactez nous*/
+
+#imagePiedPage{
+    width:40em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.332);
+    border-radius:3em;
+}
+#piedPage{
+    display:flex;
+    align-items:center;
+    gap:10em;
+    justify-content:center;
+}
+.contacts{
+    display:flex;
+    flex-direction:column; 
+    gap:1em;
+}
+
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* ---- Tablette (ecran <= 1024px) ---- */
+@media (max-width:1024px){
+    body{
+        padding-left:2em;
+        padding-right:2em;
+    }
+    header{
+        gap:3em;
+    }
+    #timbreMain{
+        width:100%;
+        max-width:35em;
+    }
+    #imageLycee{
+        width:100%;
+        max-width:25em;
+        margin-right:0;
+    }
+    .infoParagraphe{
+        width:100%;
+        max-width:30em;
+    }
+    .carte{
+        width:100%;
+        max-width:26em;
+    }
+    #imagePiedPage{
+        width:100%;
+        max-width:35em;
+    }
+    #piedPage{
+        gap:4em;
+    }
+}
+
+/* ---- Mobile (ecran <= 768px) ---- */
+@media (max-width:768px){
+    body{
+        padding-left:1.2em;
+        padding-right:1.2em;
+        padding-top:1em;
+    }
+
+    /* La barre de navigation passe en colonne pour ne pas deborder */
+    nav{
+        flex-direction:column;
+        gap:1em;
+        padding-top:1em;
+        padding-bottom:1em;
+        border-radius:1.5em;
+    }
+    .nav-droite{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:1em;
+    }
+
+    #titre{
+        font-size:1.8em;
+        text-align:center;
+    }
+    header{
+        flex-direction:column;
+        gap:2em;
+        text-align:center;
+    }
+    .collage{
+        align-items:center;
+    }
+
+    .sectionTitre{
+        font-size:2em;
+    }
+
+    .surNous{
+        flex-direction:column;
+        gap:1.5em;
+    }
+    .infoParagraphe{
+        max-width:100%;
+        font-size:1.1em;
+    }
+
+    section{
+        margin-top:3em;
+        padding:1em;
+        border-radius:1.5em;
+    }
+
+
+    .carte{
+        height:auto;
+        width:fit-content;
+        min-height:20em;
+    }
+    .imageCarte{
+        width:100%;
+        height:12em;
+    }
+
+    /* Section contact en colonne */
+    #piedPage{
+        flex-direction:column;
+        gap:2em;
+    }
+    #imagePiedPage{
+        max-width:100%;
+    }
+    .contacts a{
+        font-size:1.4em !important;
+    }
+}
+
+/* ---- Petit mobile (ecran <= 420px) ---- */
+@media (max-width:420px){
+    #titre{
+        font-size:1.4em;
+    }
+    .sectionTitre{
+        font-size:1.6em;
+    }
+    .nav-gauche p{
+        font-size:.9em;
+    }
+}

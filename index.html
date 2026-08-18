@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">   
+    <title>Association des anciens Eleves</title>
+</head>
+<body>
+       
+        <nav>
+            <div class="nav-gauche">
+                <a id="logoLien" style="align-items:center;  display:flex; gap:.5em;"><img class="petitLogo" src="assets/association-removebg-preview.png" alt="Association des anciens Eleves"><p>Association des anciens élèves</p></a>
+                
+            </div>
+            <div class="nav-droite">
+                <a href="http://anciens.blaisepascal.fr/index_fichiers/presentation.htm">Presentation</a>
+                <a href="http://anciens.blaisepascal.fr/index_fichiers/bulletin_adhesion.htm">Formulaire d'adhesion</a>
+                <a href="http://anciens.blaisepascal.fr/index_fichiers/comite.htm">Comite de l'association</a>
+            </div>
+        </nav>
+
+        <!-- ============================================================
+             EN-TETE / TITRE PRINCIPAL
+             - Le texte du grand titre est reparti dans plusieurs <span>
+               ci-dessous. Modifier directement le texte a l'interieur.
+             - "timbreMain" et "imageLycee" sont les deux photos affichees
+               a droite : remplacer le src="assets/..." par le nom d'une
+               nouvelle image deposee dans le dossier "assets".
+             ============================================================ -->
+        <header>
+            <br>
+            <h1 id="titre"><span class="sous">Association des</span><span style="font-size:1.7em;">anciens élèves du <br> Lycée Blaise-Pascal </span > <span  id="styleVille"class="sous" style="color:rgb(163, 122, 45); ">Clermont-Ferrand</span></h1>
+            <div class="collage">
+                <img id="timbreMain" src="assets/timbre2.jpg" alt="timbre">
+                <img id="imageLycee" src="assets/image020.jpg" alt="image">
+            </div>                                                     
+        </header>
+        <!-- ============================================================
+             SECTION "SUR NOUS"
+             - Le texte de presentation se trouve dans le <p class="infoParagraphe">
+               un peu plus bas : modifier directement le texte a l'interieur.
+             - Pour changer la photo, remplacer src="assets/lyceeancient.webp"
+               par le nom d'une autre image du dossier "assets".
+             ============================================================ -->
+        <section class="surNous">
+            <img class="oldPic" src="assets/lyceeancient.webp" alt="image ancienne du lycee">
+            <div>
+                <div>
+                    <h2 class="sectionTitre">Sur nous: </h2>
+                    <hr>
+                </div>
+                <p class="infoParagraphe">Le comité de l'Association est heureux de mettre ce site à la disposition des anciens et anciennes élèves de la cité scolaire Blaise-Pascal de Clermont- Ferrand. Il est à votre service et sera mis à jour fréquemment.<br><br>
+                    Nous serons heureux d'ajuster ses rubriques et son style en fonction de vos réactions. Faites passer l'information aux anciens sur l'existence de l'Association et notamment de ce site internet.<br><br>
+                    Nous vous invitons également à contribuer à ce site web, en nous adressant par courriel des projets d'articles courts (2-3 pages), des illustrations ou des informations. L'adresse courriel pour vos envois est celle du secrétariat : <a href="mailto:anciens63000@blaisepascal.fr">
+                    <span style="color:blue;">anciens63000@blaisepascal.fr </span></a><br><br> Danielle FOURT    <a href="mailto:fourt.danielle@orange.fr"><span style="color:blue;">fourt.danielle@orange.fr</span></a>
+                </p>
+            </div>
+            
+        </section>
+        <section id="Evenements" style="border:none;">
+            <div>
+                <h2 class="sectionTitre">Evenements et Resources:</h2>
+                <br>
+                <br>
+            </div>
+            <!-- ============================================================
+                 CARTES D'EVENEMENTS (defilement horizontal)
+                 Chaque bloc <div class="carte"> ci-dessous est une carte :
+                   - le texte a l'interieur du <h2> est le titre affiche
+                   - href="..." est le lien vers lequel la carte redirige
+                   - src="assets/..." est l'image de la carte (photo a
+                     mettre dans le dossier "assets")
+                 Pour AJOUTER une carte : copier-coller un bloc
+                 <div class="carte">...</div> en entier et changer son
+                 texte, son lien et son image.
+                 Pour SUPPRIMER une carte : supprimer tout le bloc
+                 <div class="carte">...</div> correspondant.
+                 ============================================================ -->
+            <div class="conteneurEvenements">
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/p_c.htm"><h2>Activités en cours</h2></a>
+                    <img src="assets/image021.jpg" class="imageCarte" alt="image">
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/assemblee_generale.htm"><h2>Date, décisions d'A. G.</h2></a>
+                    <img src="assets/A_G_24.jpg" class="imageCarte" alt="image de reunion">
+                </div>
+            
+                <!-- Pour ajouter un evenement, il vous suffit juste de creer un div class="carte"-->
+                <div class="carte">
+                    <div style="display:flex; flex-direction:column;">
+                        <a class="sans-animation" style="font-size:1em; padding:0;" href="http://anciens.blaisepascal.fr/index_fichiers/p_c.htm"><h2>Le bicentenaire du Lycée</h2></a>
+                        <a class="sans-animation" style="font-size:1em; padding:0;" href="http://anciens.blaisepascal.fr/index_fichiers/p_c.htm"><h2>Le congrès national 2020</h2></a>
+                        <a class="sans-animation" style="font-size:1em; padding:0;" href="http://anciens.blaisepascal.fr/index_fichiers/p_c.htm"><h2>Informations diverses sur la vie de l'association</h2></a>
+                        
+                    </div>
+                    
+                    <img src="assets/eleves.jpg" class="imageCarte" alt="bicentenaire image">
+
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/compta.htm"><h2>La vie financière de l'association</h2></a>
+                    <img src="assets/pascal_500.jpg" class="imageCarte" alt="billet blaise pascal">
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/nos_conferences.htm"><h2>Les conférences données dans le cadre de l'association</h2></a>
+                    <img src="assets/image011_bis.jpg" class="imageCarte" alt="archives">
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/histoire.htm"><h2>Le Lycée dans l'Histoire...</h2></a>
+                    <img src="assets/image008.jpg" class="imageCarte" alt="ancienne photo de classe">
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/nos_sorties.htm"><h2>Nos sorties et autres manifestations...</h2></a>
+                    <img src="assets/chav_orsay_2.jpg" class="imageCarte" alt="Sorties">
+                </div>
+                <div class="carte">
+                    <a class="sans-animation" href="http://anciens.blaisepascal.fr/index_fichiers/petit_blaise.htm"><h2>Sommaire du bulletin semestriel</h2></a>
+                    <img src="" class="imageCarte" alt="">
+                </div>
+               
+            </div>
+        </section>
+       
+        <section>
+            <h2 class="sectionTitre">Contactez Nous</h2>
+            <br>
+            <br>
+            <div id="piedPage">
+
+                <img id="imagePiedPage" src="assets/jour_fete.jpg">
+                <div class="contacts">
+                    <a href="https://lyc-blaise-pascal-clermont.ent.auvergnerhonealpes.fr/" style="font-size:2em;">Site du Lycée     <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href=https://www.instagram.com/anciensblaisepascal/profilecard/"" style="font-size:2em;">Lien Instagram <i class="fa-brands fa-square-instagram"></i>     <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="" style="font-size:2em;">Nous écrire     <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div
+            </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+
+    
+</body>
+</html>
