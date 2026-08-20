@@ -11,7 +11,6 @@
 body{
     font-family:Instrument Sans; 
 
-    background:rgb(255, 253, 248);
     
 }
 
@@ -133,9 +132,16 @@ hr{
     width:15em;
     margin-bottom:1em;
 }
+.textBox{
+    backdrop-filter:blur(30px);
+    padding:1em;
+    border-radius:2em;
+}
 .surNous{
     display:flex;
     gap:3em;
+    background:linear-gradient(70deg, rgba(255,255,255,.5),rgba(255,255,255,.5)),url("assets/transBg.png");
+
     justify-content:center;
     align-items:center;
     
@@ -168,18 +174,18 @@ section{
 .carte{
     display:flex;
     flex-direction:column; 
-    gap:1em;
-    border-left:4px solid rgb(163, 122, 45);
-    border-top:4px solid rgb(163, 122, 45);
-    border-right:4px solid rgb(214, 148, 27);
-    border-bottom:4px solid rgb(214, 148, 27);
+    gap:.5em;
+    border-left:7px solid rgb(163, 122, 45);
+    border-top:7px solid rgb(163, 122, 45);
+    border-right:7px solid rgb(214, 148, 27);
+    border-bottom:7px solid rgb(214, 148, 27);
     width:30em;
     align-items:center;
-    border-radius:2em;
     color:white;
     padding:1em;
+    border-radius:3em;
     height:25em;
-    background: rgba(163, 122, 45, 0.859) ;
+    background: rgbaa(255,255,255,.5) ;
     backdrop-filter:blur(10px);
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.357);
     transition:.2s;
@@ -204,8 +210,9 @@ section{
 
 
 #Evenements{
-    background:linear-gradient(180deg, rgba(255,255,255,.5), rgba(255,255,255,.5)), url("assets/silhouette.jpg");
+    background: linear-gradient(70deg, rgba(255,255,255,.5),rgba(255,255,255,.5)),url("assets/silhouette.jpg");
     background-size:cover;
+    
 }
 
 /* contactez nous*/
