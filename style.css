@@ -1,17 +1,4 @@
-/* ==========================================================
-   FICHIER DE STYLE (couleurs, tailles, espacements)
-   Ce fichier controle uniquement l'APPARENCE du site.
-   Le contenu (textes, liens, images) se modifie dans index.html.
 
-   Quelques reperes utiles si besoin de changer une couleur :
-   - Couleur doree/marron principale : rgb(163, 122, 45)
-   - Couleur orange claire de la barre de menu : rgb(255, 218, 151)
-   - Fond de page (creme) : rgb(255, 253, 248)
-
-   La derniere partie du fichier (tout en bas, section
-   "RESPONSIVE / ADAPTATION MOBILE") adapte automatiquement le site
-   pour les tablettes et telephones. Il n'y a rien a faire manuellement.
-   ========================================================== */
 
 /*remettre les espacements a 0*/
 
@@ -23,9 +10,7 @@
 
 body{
     font-family:Instrument Sans; 
-    padding-top:2em;
-    padding-right:4em;
-    padding-left:4em;
+
     background:rgb(255, 253, 248);
     
 }
@@ -38,8 +23,12 @@ a{
     padding:.5em;
     transition:.1s;
 }
+#nav{
+    display:flex; 
+    gap:3em;
+    align-items:center;
+}
 a:hover{
-    border:2px solid rgb(255, 207, 172);
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.373);
     border-radius:1em;
     background:rgba(255, 166, 0, 0.3);
@@ -48,10 +37,9 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color:rgb(255, 218, 151);
-    border-radius:2em;
-    border-bottom:4px solid rgb(163, 122, 45);
-    margin-bottom:2em;
+    background-color:rgba(255, 192, 74, 0.975);
+
+    margin-bottom:3em;
     padding-left:2em;
     padding-right:2em;
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.273);
@@ -65,10 +53,7 @@ nav{
     width:5em;
     border-radius:2em;
 }
-.nav-gauche{
-    font-family: "Edu NSW ACT Cursive", cursive;
-    font-weight:600;
-}
+
 #logoLien{
     transition:none;
 }
@@ -116,16 +101,17 @@ header{
     border:2px solid rgb(255, 218, 179);
     border-radius:1em;
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.353);
-    animation: bouge 10s  reverse  ease-in infinite;
-
+    animation: bouge 7s  reverse  ease-in infinite;
+    rotate:-7deg;
 }
 #imageLycee{
     width:25em;
-    margin-right:6em;
+
     border-radius:1em;
     border:2px solid rgb(133, 133, 133);
     box-shadow:1px 1px 10px  rgba(0,0,0,.353);
-    animation: bouge 10s ease infinite;
+    animation: bouge 7s ease infinite;
+    rotate: 10deg;
 
 }
 .collage{
@@ -156,8 +142,7 @@ hr{
 
 }
 section{
-    border-top:4px solid rgb(163, 122, 45);
-    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.361);
+    border-top:4px solid rgba(163, 122, 45, 0.444);
     padding-top:3em;
     margin-top:7em;
     border-radius:3em;
@@ -191,16 +176,17 @@ section{
     width:30em;
     align-items:center;
     border-radius:2em;
+    color:white;
     padding:1em;
     height:25em;
-    background: linear-gradient(75deg, rgba(163, 122, 45, 0.178),rgba(198, 153, 69, 0.285)) ;
+    background: rgba(163, 122, 45, 0.859) ;
     backdrop-filter:blur(10px);
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.357);
     transition:.2s;
 }
 .carte:hover{
     transform:translateY(-.2em);
-    background: linear-gradient(95deg, rgba(163, 122, 45, 0.178),rgb(198, 153, 69)) ;
+    background:orange;
     filter:saturate(150%);
 }
 .conteneurEvenements{
