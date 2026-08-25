@@ -132,14 +132,12 @@ hr{
     margin-bottom:1em;
 }
 .textBox{
-    backdrop-filter:blur(30px);
     padding:1em;
     border-radius:2em;
 }
 .surNous{
     display:flex;
     gap:3em;
-    background:linear-gradient(70deg, rgba(255,255,255,.5),rgba(255,255,255,.5)),url("assets/transBg.png");
 
     justify-content:center;
     align-items:center;
@@ -162,8 +160,7 @@ section{
 
 .textBox{
     padding:1em;
-    box-shadow:1px 1px 10px black;
-    background:rgba(0,0,0,.1);
+    background:rgba(0,0,0,.05);
 }
 .oldPic{
     border-radius:3em;
@@ -181,17 +178,17 @@ section{
     display:flex;
     flex-direction:column; 
     gap:.5em;
-    border-left:7px solid rgb(163, 122, 45);
-    border-top:7px solid rgb(163, 122, 45);
-    border-right:7px solid rgb(214, 148, 27);
-    border-bottom:7px solid rgb(214, 148, 27);
+    border-left:2px solid rgb(163, 122, 45);
+    border-top:2px solid rgb(163, 122, 45);
+    border-right:2px solid rgb(214, 148, 27);
+    border-bottom:2px solid rgb(214, 148, 27);
     width:30em;
     align-items:center;
     color:white;
     padding:1em;
     border-radius:3em;
     height:25em;
-    background: rgbaa(255,255,255,.5) ;
+    background: rgba(255,255,255,.5) ;
     backdrop-filter:blur(10px);
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.357);
     transition:.2s;
