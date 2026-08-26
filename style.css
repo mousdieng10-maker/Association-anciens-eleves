@@ -276,6 +276,7 @@ img{
         width:100%;
         max-width:35em;
     }
+    
     #imageLycee{
         width:100%;
         max-width:25em;
@@ -297,7 +298,12 @@ img{
         gap:4em;
     }
 }
-
+@media(max-width:1300px){
+    .surNous{
+        flex-direction:column;
+        gap:1.5em;
+    }
+}
 /* ---- Mobile (ecran <= 768px) ---- */
 @media (max-width:768px){
     body{
