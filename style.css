@@ -359,8 +359,10 @@ img{
         min-height:20em;
     }
     .imageCarte{
-        width:100%;
-        height:12em;
+        min-width:17em;
+        max-width:17em;
+        height:10em;
+
     }
 
     /* Section contact en colonne */
