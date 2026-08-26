@@ -86,7 +86,7 @@ nav{
 }
 
 .sous{
-    color:rgb(56, 56, 56);
+    color:#383838;
 }
 header{
     display:flex;
@@ -164,6 +164,7 @@ section{
 }
 .oldPic{
     border-radius:3em;
+    rotate:-5deg;
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.398);
 }
 
