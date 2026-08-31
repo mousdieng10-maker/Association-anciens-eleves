@@ -41,12 +41,14 @@ navBar.onclick = function(){
         navLink.style.fontWeight = "800";
         navLinkTwo.style.fontWeight = "800";
         navLinkThree.style.fontWeight = "800";
+        document.body.style.overflow = "hidden";
         visible(navEl);
     
     
 }
 goBack.onclick = function(){
     hide(navEl);
+    document.body.style.overflow = "visible";
 }
 
 
