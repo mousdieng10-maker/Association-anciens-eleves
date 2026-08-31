@@ -416,10 +416,17 @@ img{
         width:fit-content;
         min-height:20em;
     }
+    a h2{
+        font-size:1em;
+        text-align:center;
+    }
+    hr{
+        width:5em;
+    }
     .imageCarte{
-        min-width:17em;
-        max-width:17em;
-        height:10em;
+        min-width:14em;
+        max-width:14em;
+        height:8em;
 
     }
 
