@@ -14,7 +14,9 @@ const even = document.querySelector("#Evenements");
 const firstContacts = document.querySelectorAll(".firstContact");
 const sectionTitres = document.querySelectorAll(".sectionTitre");
 const specialTitre = document.querySelector("#specialTitre");
-const sections = document.querySelectorAll(".sect")
+const sections = document.querySelectorAll(".sect");
+const cards = document.querySelectorAll(".carte");
+const insideCards = document.querySelectorAll("inside"); 
 function hide(element){
     element.style.display = "none";
 }
@@ -37,6 +39,13 @@ navBar.onclick = function(){
 lightToggle.onclick = function(){
     body.style.background = "#303030";
     body.style.color = "white";
+    for(const card of cards){
+        card.style.borderTop = "2px solid #ff3d775f";
+
+    }
+    for(const insideCard of insideCards){
+        insideCard.style.color = "white";
+    }
     greytxt.style.color = "#bdbdbd";
     for(const image of imgs){
         image.style.boxShadow = `1px 1px 10px rgba(0, 0, 0, 0.6)`
@@ -57,7 +66,7 @@ lightToggle.onclick = function(){
         first.style.color = "#6e88fa"
     }
     for(const section of sections){
-        section.style.borderTop = `2px solid #FF3D77`
+        section.style.borderTop = `4px solid #ff3d7762`
     }
     even.style.background = `linear-gradient(70deg, rgba(0,0,0,.7),rgba(0,0,0,.7)),url("assets/silhouette.jpg")`
     even.style.backgroundSize  = "cover";
@@ -75,6 +84,9 @@ lightToggle.onclick = function(){
         for(const contact of contacts){
             contact.style.color = "black"
         }
+        for(const section of sections){
+            section.style.borderTop = "4px solid rgba(163, 122, 45, 0.444)";
+        }
         even.style.background = `linear-gradient(70deg, rgba(255,255,255,.5),rgba(255,255,255,.5)),url("assets/silhouette.jpg")`
         even.style.backgroundSize = "cover";
         for(const sectionTitre of sectionTitres){
@@ -82,6 +94,10 @@ lightToggle.onclick = function(){
     }
         for(const image of imgs){
             image.style.boxShadow = `1px 1px 10px rgba(0, 0, 0, 0.6)`
+        }
+        for(const card of cards){
+            card.style.borderTop = "2px solid rgb(163, 122, 45)";
+
         }
         for(const first of firstContacts){
             first.style.color = "blue"
