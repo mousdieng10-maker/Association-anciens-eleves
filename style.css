@@ -177,7 +177,31 @@ section{
     rotate:-5deg;
     box-shadow:1px 1px 10px rgba(0, 0, 0, 0.398);
 }
-
+.glow{
+    animation: glow 2s infinite; 
+}
+#lightToggle{
+    animation: pinkle 2s infinite; 
+}
+@keyframes pinkle{
+    0%{}
+    50%{
+        text-shadow:1px 1px 30px rgb(255, 0, 132);
+        color:pink;
+    }
+}
+@keyframes glow{
+    0% {
+        text-shadow:none;
+    }
+    50% {
+        text-shadow:1px 1px 10px yellow; 
+        transform:rotate(40deg);
+    }
+    100%{
+        text-shadow:none; 
+    }
+}
 /* carte d'information */
 
 
@@ -189,10 +213,9 @@ section{
     display:flex;
     flex-direction:column; 
     gap:.5em;
-    border-left:2px solid rgb(163, 122, 45);
+
     border-top:2px solid rgb(163, 122, 45);
-    border-right:2px solid rgb(214, 148, 27);
-    border-bottom:2px solid rgb(214, 148, 27);
+
     width:30em;
     align-items:center;
     color:white;

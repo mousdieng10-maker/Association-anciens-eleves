@@ -14,6 +14,7 @@ const even = document.querySelector("#Evenements");
 const firstContacts = document.querySelectorAll(".firstContact");
 const sectionTitres = document.querySelectorAll(".sectionTitre");
 const specialTitre = document.querySelector("#specialTitre");
+const sections = document.querySelectorAll(".sect")
 function hide(element){
     element.style.display = "none";
 }
@@ -55,6 +56,9 @@ lightToggle.onclick = function(){
     for(const first of firstContacts){
         first.style.color = "#6e88fa"
     }
+    for(const section of sections){
+        section.style.borderTop = `2px solid #FF3D77`
+    }
     even.style.background = `linear-gradient(70deg, rgba(0,0,0,.7),rgba(0,0,0,.7)),url("assets/silhouette.jpg")`
     even.style.backgroundSize  = "cover";
     hide(lightToggle)
@@ -62,7 +66,8 @@ lightToggle.onclick = function(){
     darkToggle.classList.add("fa-solid");
     darkToggle.classList.add("fa-sun");
     darkToggle.style.fontSize = "2em";
-
+    darkToggle.style.color = "yellow";
+    darkToggle.classList.add("glow");
     navDroite.appendChild(darkToggle);
     darkToggle.onclick = function(){
         body.style.background = "white";
