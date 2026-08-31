@@ -1,6 +1,7 @@
 const navLink = document.getElementById("navLink");
 const navLinkTwo = document.getElementById('navLinkTwo');
 const navLinkThree = document.getElementById("navLinkThree"); 
+const navLinks = document.querySelector("#nav"); 
 const navBar = document.getElementById("navBar"); 
 const navEl = document.getElementById("nav"); 
 const lightToggle = document.getElementById("lightToggle");
@@ -17,24 +18,37 @@ const specialTitre = document.querySelector("#specialTitre");
 const sections = document.querySelectorAll(".sect");
 const cards = document.querySelectorAll(".carte");
 const insideCards = document.querySelectorAll("inside"); 
+const goBack= document.querySelector("#goBack");
 function hide(element){
     element.style.display = "none";
 }
 function visible(element){
-    element.style.display = "block"
+    element.style.display = "flex"
 }
 
-hide(navEl)
+hide(navEl);
+
 
 navBar.onclick = function(){
-    if(navEl.style.display == "block"){
-        hide(navEl)
-    }
-    else{
-        visible(navEl)
-    }
+
+        navEl.classList.add("cover");
+        navLink.style.color = "white";
+        navLinkTwo.style.color = "white";
+        navLinkThree.style.color = "white";
+        navLink.style.fontSize = "3em";
+        navLinkTwo.style.fontSize = "3em";
+        navLinkThree.style.fontSize = "3em";
+        navLink.style.fontWeight = "800";
+        navLinkTwo.style.fontWeight = "800";
+        navLinkThree.style.fontWeight = "800";
+        visible(navEl);
+    
     
 }
+goBack.onclick = function(){
+    hide(navEl);
+}
+
 
 lightToggle.onclick = function(){
     body.style.background = "#303030";
