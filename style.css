@@ -355,14 +355,23 @@ img{
         padding-top:1em;
     }
 
-    /* La barre de navigation passe en colonne pour ne pas deborder */
     nav{
         gap:1em;
-        padding-top:1em;
-        padding-bottom:1em;
         border-radius:1.5em;
-    }
+        margin-bottom:0;
 
+    }
+    #timbreMain{
+        rotate:0deg;
+    }
+    #imageLycee{
+        display:none;
+    }
+    .oldPic{
+        width:15em;
+        border-radius:1px;
+        rotate:0deg;
+    }
     .nav-droite{
         flex-wrap:wrap;
         justify-content:center;
